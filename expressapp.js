@@ -18,6 +18,6 @@ expapp.get('/test1', function(req, res) {
             }
         });
 });
-server.listen(3003, function() {
+server.listen(process.env.PORT || 5000, function() {
     console.log('Server running!')
 });
